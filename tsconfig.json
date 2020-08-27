@@ -23,5 +23,8 @@
     "paths": {
       "@config/*": ["./src/config/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

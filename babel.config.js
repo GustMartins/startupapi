@@ -4,7 +4,7 @@ module.exports = {
       '@babel/preset-env',
       {
         targets: {
-          node: 'current'
+          node: '12'
         }
       }
     ],
@@ -13,7 +13,11 @@ module.exports = {
   plugins: [
     ['module-resolver', {
       alias: {
-        '@config': './src/config'
+        '@config': './src/config',
+        '@entities': './src/entities',
+        '@providers': './src/providers',
+        '@repositories': './src/repositories',
+        '@cases': './src/useCases'
       }
     }]
   ],

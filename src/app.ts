@@ -1,15 +1,7 @@
 import express from 'express'
 
-class MyApp {
-  express: express.Application
+const app = express()
 
-  constructor() {
-    this.express = express()
-  }
+app.use(express.json())
 
-  middlewares() {}
-
-  routes() {}
-}
-
-export default new MyApp().express
+export { app }
